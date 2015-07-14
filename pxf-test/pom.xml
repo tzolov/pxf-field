@@ -3,6 +3,7 @@
 	<groupId>com.gopivotal</groupId>
 	<artifactId>pxf-test</artifactId>
 	<version>3.0.0.0-1-SNAPSHOT</version>
+	
 	<repositories>
 		<repository>
 			<id>org.springsource.maven.milestone</id>
@@ -16,11 +17,17 @@
 		</repository>
 	</repositories>
 
+	<distributionManagement>
+	  <repository>
+	    <id>bintray</id>
+	    <url>https://api.bintray.com/maven/tzolov/maven/pxf-field</url>
+	  </repository>
+	</distributionManagement>
+	
 	<properties>
 		<hadoop-version>2.6.0.3.0.0.0-249</hadoop-version>
 		<pxf-version>2.5.0.0</pxf-version>
 	</properties>
-
 
 	<build>
 		<plugins>

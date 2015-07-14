@@ -22,6 +22,14 @@
 			<url>https://github.com/tzolov/maven-repo/raw/master/</url>
 		</repository>		
 	</repositories>
+
+	<distributionManagement>
+	  <repository>
+	    <id>bintray</id>
+	    <url>https://api.bintray.com/maven/tzolov/maven/pxf-field</url>
+	  </repository>
+	</distributionManagement>
+		
 	<build>
 		<plugins>
 			<plugin>
